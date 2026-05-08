@@ -8,7 +8,7 @@ connectDB();
 
 const app = express();
 app.use(cors({
-    origin: process.env.FRONTEND_URL || '*',
+    origin: ['https://frontend-production-ff73.up.railway.app', 'http://localhost:5173'],
     credentials: true
   }));
 app.use(express.json());
