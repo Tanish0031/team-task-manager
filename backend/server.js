@@ -8,14 +8,11 @@ connectDB();
 
 const app = express();
 
-
-const corsOptions = {
-  origin: 'https://frontend-production-ff73.up.railway.app',
-  credentials: true
-};
-
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 
