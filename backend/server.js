@@ -7,10 +7,10 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors({
-    origin: ['https://frontend-production-ff73.up.railway.app', 'http://localhost:5173'],
-    credentials: true
-  }));
+
+app.use(cors());
+app.options('*', cors());
+
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/authRoutes'));
