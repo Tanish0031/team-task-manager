@@ -9,10 +9,13 @@ connectDB();
 const app = express();
 
 
-app.use(cors({
+const corsOptions = {
   origin: 'https://frontend-production-ff73.up.railway.app',
   credentials: true
-}));
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 app.use(express.json());
 
