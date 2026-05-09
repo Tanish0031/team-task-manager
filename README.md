@@ -1,3 +1,58 @@
+# 📋 Team Task Manager
+
+A full-stack MERN application for managing projects and tasks with role-based access control (Admin/Member).
+
+## 🌐 Live Demo
+🔗 [https://frontend-production-ff73.up.railway.app](https://frontend-production-ff73.up.railway.app)
+
+## 🚀 Features
+- 🔐 Authentication (Signup/Login with JWT)
+- 📁 Project & Team Management
+- ✅ Task Creation, Assignment & Status Tracking
+- 📊 Kanban Board (Todo / In Progress / Done)
+- 👑 Role-Based Access Control (Admin / Member)
+- 📈 Dashboard with stats (Total Projects, Tasks, Overdue)
+
+## 🛠️ Tech Stack
+| Layer | Technology |
+|---|---|
+| Frontend | React, Vite, Tailwind CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB (Railway) |
+| Auth | JWT + bcrypt |
+| Deployment | Railway |
+
+## 👑 Admin vs Member Access
+
+| Feature | Member | Admin |
+|---|---|---|
+| Create Project | ✅ | ✅ |
+| Delete own project | ✅ | ✅ |
+| Delete any project | ❌ | ✅ |
+| Add members to project | ❌ | ✅ |
+| Create tasks | ✅ | ✅ |
+| Move task status | ✅ | ✅ |
+| Delete tasks | ❌ | ✅ |
+| View all projects | ❌ | ✅ |
+| Gold Admin badge | ❌ | ✅ |
+
+## 🗂️ Project Structure
+team-task-manager/
+├── backend/
+│   ├── config/        # Database connection
+│   ├── controllers/   # Route logic
+│   ├── middleware/    # JWT auth middleware
+│   ├── models/        # Mongoose schemas
+│   ├── routes/        # API routes
+│   └── server.js      # Entry point
+└── frontend/
+├── src/
+│   ├── components/ # Navbar
+│   ├── context/    # Auth context
+│   ├── pages/      # Login, Register, Dashboard, Projects
+│   └── utils/      # Axios API config
+└── index.html
+
 ## ⚙️ Run Locally
 
 ### Prerequisites
