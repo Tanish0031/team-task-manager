@@ -37,6 +37,7 @@ A full-stack MERN application for managing projects and tasks with role-based ac
 | Gold Admin badge | ❌ | ✅ |
 
 ## 🗂️ Project Structure
+
 team-task-manager/
 ├── backend/
 │   ├── config/        # Database connection
@@ -46,13 +47,12 @@ team-task-manager/
 │   ├── routes/        # API routes
 │   └── server.js      # Entry point
 └── frontend/
-├── src/
-│   ├── components/ # Navbar
-│   ├── context/    # Auth context
-│   ├── pages/      # Login, Register, Dashboard, Projects
-│   └── utils/      # Axios API config
-└── index.html
-
+    ├── src/
+    │   ├── components/ # Navbar
+    │   ├── context/    # Auth context
+    │   ├── pages/      # Login, Register, Dashboard, Projects
+    │   └── utils/      # Axios API config
+    └── index.html
 ## ⚙️ Run Locally
 
 ### Prerequisites
