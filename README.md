@@ -36,23 +36,28 @@ A full-stack MERN application for managing projects and tasks with role-based ac
 | View all projects | ❌ | ✅ |
 | Gold Admin badge | ❌ | ✅ |
 
+
+````md
 ## 🗂️ Project Structure
 
+```
 team-task-manager/
 ├── backend/
-│   ├── config/        # Database connection
-│   ├── controllers/   # Route logic
-│   ├── middleware/    # JWT auth middleware
-│   ├── models/        # Mongoose schemas
-│   ├── routes/        # API routes
-│   └── server.js      # Entry point
+│   ├── config/         # Database connection
+│   ├── controllers/    # Route logic
+│   ├── middleware/     # JWT auth middleware
+│   ├── models/         # Mongoose schemas
+│   ├── routes/         # API routes
+│   └── server.js       # Entry point
 └── frontend/
-    ├── src/
-    │   ├── components/ # Navbar
-    │   ├── context/    # Auth context
-    │   ├── pages/      # Login, Register, Dashboard, Projects
-    │   └── utils/      # Axios API config
-    └── index.html
+    └── src/
+        ├── components/ # Navbar
+        ├── context/    # Auth context
+        ├── pages/      # Login, Register, Dashboard, Projects
+        └── utils/      # Axios API config
+```
+````
+
 ## ⚙️ Run Locally
 
 ### Prerequisites
